@@ -1,0 +1,53 @@
+.ask-qcon{
+    min-height: 100vh;
+    background: #f1f2f3;
+}
+
+.askq{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.askq h1{
+    padding: 80px 0px 20px 0px;
+}
+.fmq{
+    padding: 20px;
+        background: #fff;
+    border-radius: 4px;
+        box-shadow: 3px 3px 10px rgb(0 0 0 / 5%),
+            -3px -3px 10px rgb(0 0 0 /5%)
+}
+
+.askfc label h4{
+    margin-bottom: 0%;
+}
+
+.askfc label p {
+    margin: 0%;
+    font-size: 13px;
+    padding: 3px 0px;
+}
+
+.askfc label input, .askfc label textarea {
+   padding: 10px;
+   border: solid 1px #0000003e;
+   font-family: 'Roboto',sans-serif;
+   width: calc(100% - 20px);
+   resize: vertical;
+}
+
+.sub{
+    margin: 50px 0px;
+    padding: 10px;
+    background: #009dff;
+    border: solid 1px #009dff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sub:hover{
+    background: #0083d4;
+}
