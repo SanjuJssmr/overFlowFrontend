@@ -124,7 +124,8 @@ const QuestionDetails = () => {
                             }
                           </div>
                           <div>
-                            <p>asked on {moment(question.time).fromNow()}</p>
+                            
+                            <p>asked on {moment(question.answeredOn).fromNow()}</p>
                             <Link to={`/Users/${question.userId}`} className='ulink' style={{ color: "#fff" }}>
                               <h2 style={{ background: "orange", padding: "8px 15px" }}>{question.userPosted.charAt(0).toUpperCase()}</h2>
                               <div>
