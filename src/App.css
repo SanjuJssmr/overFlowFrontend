@@ -6,6 +6,7 @@
     width: 100%;
     justify-content: space-between;
     margin: 0% auto;
+ z-index: 3;
 }
 
 .main {
@@ -15,4 +16,13 @@
     width: calc(100% - 164px);
     padding: 3%;
     box-sizing: border-box;
+}
+
+
+@media (max-width:900px){
+    .main{
+        width: 100%;
+        flex-direction: column;
+     
+    }
 }
