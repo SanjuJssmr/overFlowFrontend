@@ -37,24 +37,24 @@ const Navbar = () => {
     return (
       <div className='main-nav'>
       <div className='navbar'>
-          <Link to='/' className='nav-item nav-btn align'>
+          <Link to='/' className='nav-btn align'>
               <FaStackOverflow  className='logo'/>
-               StackOverflow
+                    <h3 className='head'>StackOverflow</h3>
           </Link>
           <Link to='/' className='nav-item nav-btn'>About</Link>
           <Link to='/' className='nav-item nav-btn'>Products</Link>
           <Link to='/' className='nav-item nav-btn'>For Teams</Link>
           <form className='align'>
               <input type="text" placeholder='Search here' />
-              <FaSearch style={{marginLeft:"10px"}}/>
+              <FaSearch style={{marginLeft:"10px"}} className='sr'/>
 
           </form>
           {User === null ?
-              <Link to='/Auth' className='nav-item nav-links ' >Log In</Link> :
+              <Link to='/Auth' className='logbtn nav-links ' >Log In</Link> :
               
               <div className='align '>
                         <Avatar backgroundColor='#009dff' px='11px' py='7px' borderRadius='50%' >
-                            <Link to={`/Users/${User?.result._id}`} style={{textDecoration:'none',color:"#fff"}} >
+                            <Link to={`/Users/${User?.result._id}`} style={{textDecoration:'none',color:"#fff"}} className='ava' >
                                 {User.result.name.charAt(0).toUpperCase()}
                             </Link>
                         </Avatar>
