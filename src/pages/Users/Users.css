@@ -38,3 +38,13 @@
 .user-profile-link h5 {
    margin: 0px 15px; 
 }
+
+@media (max-width:900px) {
+    .mainuser {
+        margin-top: 59px;
+        display: flex;
+        align-items: center;
+        
+        width: 400px;
+    }
+}
