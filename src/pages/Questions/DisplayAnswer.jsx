@@ -9,7 +9,7 @@ const DisplayAnswer = ({ question, handleShare }) => {
     const { id } = useParams()
     const dispatch = useDispatch()
 
-    
+  
 
     const handleDelete = (answerId, noOfAnswers) => {
         dispatch(deleteAnswer(id, answerId, noOfAnswers - 1))
