@@ -14,48 +14,13 @@ const QuestionDetails = () => {
 
   const { id } = useParams()
   const questionsList = useSelector((state) => (state.questionsReducer))
-  // var questionList = [{
-  //   _id: '1',
-  //   upVotes: 3,
-  //   downVotes: 2,
-  //   noOfAnswers: 2,
-  //   questionTitle: "What is a Framework",
-  //   questionBody: "It meant to be",
-  //   questionTags: ['java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel'],
-  //   userPosted: "Rahul",
-  //   userId: 1,
-  //   time: "Jan 2",
-  //   answer: [{
-  //     answerBody: "Answer",
-  //     userAnswered: "mohan",
-  //     answeredOn: "jan 3",
-  //     userId: "3"
-  //   }]
-  // },
-  // {
-  //   _id: '2',
-  //   upVotes: 3,
-  //   downVotes: 2,
-  //   noOfAnswers: 2,
-  //   questionTitle: "What is a React",
-  //   questionBody: "It meant to be",
-  //   questionTags: ['Nodejs', 'AntDesign', 'Components', 'reduxToolKit', 'mongoose'],
-  //   userPosted: "Ravi",
-  //   userId: 2,
-  //   time: "Jan 3",
-  //   answer: [{
-  //     answerBody: "Answer",
-  //     userAnswered: "arun",
-  //     answeredOn: "jan 4",
-  //     userId: "4"
-  //   }]
-  // }]
+
   const location = useLocation()
   const Navigate = useNavigate()
   const dispatch = useDispatch()
   const [Answer, setAnswer] = useState('')
   const User = useSelector((state) => (state.currentUserReducer))
-  const url = 'https://overflowbackend.onrender.com'
+  const url = ' http://localhost:5000/'
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault()
@@ -137,6 +102,7 @@ const QuestionDetails = () => {
                       </div>
                     </div>
                   </section>
+                  <div className='qas'>
                   {question.noOfAnswers !== 0 && (
                     <section>
                       <h3>{question.noOfAnswers} Answers</h3>
@@ -157,7 +123,8 @@ const QuestionDetails = () => {
                       } or
                       <Link to='/AskQuestions' style={{ textDecoration: "none", color: "#009dff" }}>Ask tour own question</Link>
                     </p>
-                  </section>
+                    </section>
+                  </div>
                 </div>
               ))
             }
