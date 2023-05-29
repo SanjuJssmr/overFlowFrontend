@@ -26,6 +26,9 @@
     text-decoration: none;
     transition: 0.3s;
 }
+
+
+
  .ask-question:hover{
     background: #0879bf;
  }
@@ -45,10 +48,13 @@
 
 }
 
+
+
 .conques .display-votes{
     padding: 20px;
 
 }
+
 .conques .display-votes {
     margin: 0%;
     text-align: center;
@@ -98,4 +104,54 @@
 
 .qtimedtails .time{
     font-size: 13px;
+}
+@media (max-width:900px) {
+
+.main-bar-header {
+        margin-top: 20px;
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .main-bar-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .load h1 {
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+    .load p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+
+    }
+
+    .conques {
+        width: 300px;
+        margin-left: 20px;
+        align-items: baseline;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .conques .display-votes {
+        padding: 0px;
+        font-size: 13px;
+
+    }
+
+.display-qdetails {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+ .time{
+  margin-right: 0px;
+  align-items: flex-start;
+
+}
 }
