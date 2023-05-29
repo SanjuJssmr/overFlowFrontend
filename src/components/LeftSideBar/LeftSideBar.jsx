@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './LeftSideBar.css'
+import { RiMenuUnfoldLine } from 'react-icons/ri'
+import {VscChromeClose} from 'react-icons/vsc'
 import { FaGlobeAmericas } from 'react-icons/fa'
 const LeftSideBar = () => {
+
+  const [barState, setBarState] = useState(false)
+  const showBar = () => {
+  setBarState(!barState)
+}
+
   return (
-    <div className='side-nav'>
-      <nav className='main-nav-bars' >
+    <div className='mainSide'>
+     <div className='toggle'  onClick={showBar} > 
+        {barState ? <RiMenuUnfoldLine  /> :
+          <VscChromeClose  />}
+      </div>
+    <div className={!barState ? 'side-nav' : 'mob-nav' }   >
+     
+      <nav className={barState ? 'main-nav-bars' :""} >
         <NavLink to='/' className='nav-bar' activeclassname='active'>
           <p>Home</p>
         </NavLink>
       </nav>
-      <nav className='nav-bars'>
+      <nav className={barState ? 'nav-bars' : ""} >
         <div ><p>PUBLIC</p></div>
         <NavLink to='/Questions' className='nav-bar' activeclassname='active'>
          <FaGlobeAmericas style={{marginRight:"10px"}}/>
@@ -24,6 +38,7 @@ const LeftSideBar = () => {
         </NavLink>
         
       </nav>
+      </div>
     </div>
   )
 }
