@@ -13,6 +13,7 @@
     -3px -3px 10px rgb(0 0 0 /5%)
 }
 
+
 .widget h4{
     background-color: hsl(47, 100%, 91%);
     margin: 0%;
@@ -65,4 +66,12 @@ gap: 1px;
     color: #39739d;
     border-radius: 3px;
     
+}
+
+
+@media(max-width:700px) {
+    .right-sidebar {
+        width: 300px;
+        margin-top: 0%;
+    }
 }
