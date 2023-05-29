@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Auth.css'
 const AboutAuth = () => {
   return (
-      <div>
+      <div className='signabt'>
           <h1>Join stackOverflow community</h1>
           <p>Get unstuck - ask a question</p>
           <p>Unlock new privileges like voting and commenting</p>
