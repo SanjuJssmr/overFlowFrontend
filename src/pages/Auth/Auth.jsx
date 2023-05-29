@@ -42,7 +42,9 @@ const Auth = () => {
   return (
     <div>
       <section className='authsec'>
-        {isSignUp && <AboutAuth />}
+        <div>
+          {isSignUp && <AboutAuth />}
+        </div>
         <div className='container'>
           {!isSignUp && <FaStackOverflow className='logo2' />}
           <form className='frm' onSubmit={handleSubmit}>
