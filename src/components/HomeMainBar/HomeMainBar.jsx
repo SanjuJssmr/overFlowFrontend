@@ -13,44 +13,6 @@ const HomeMainBar = () => {
 
   const questionsList = useSelector((state) => (state.questionsReducer))
 
-
-  // var questionsList = [{
-  //   _id: 1,
-  //   upVotes: 3,
-  //   downVotes:2,
-  //   noOfAnswers: 2,
-  //   questionTitle: "What is a Framework",
-  //   questionBody: "It meant to be",
-  //   questionTags: ['java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel', 'java', 'springboot', 'laravel'],
-  //   userPosted: "Rahul",
-  //   userId:1,
-  //   askedOn: "Jan 2",
-  //   answer: [{
-  //     answerBody: "Answer",
-  //     userAnswered: "mohan",
-  //     answeredOn: "jan 3",
-  //     userId:"3"
-  //   }]
-  // },
-  //   {
-  //     _id: 2,
-  //     upVotes: 3,
-  //     downVotes:2,
-  //     noOfAnswers: 2,
-  //     questionTitle: "What is a React",
-  //     questionBody: "It meant to be",
-  //     questionTags: ['Nodejs', 'AntDesign', 'Components','reduxToolKit','mongoose'],
-  //     userPosted: "Ravi",
-  //     userId:2,
-  //     askedOn: "Jan 3",
-  //     answer: [{
-  //       answerBody: "Answer",
-  //       userAnswered: "arun",
-  //       answeredOn: "jan 4",
-  //       userId: "4"
-  //     }]
-  //   }]
-
   const checkAuth = () => {
     if (user === null) {
       alert("login or signup to ask a question")
@@ -70,7 +32,7 @@ const HomeMainBar = () => {
         }
         <button to='/AskQuestion' onClick={checkAuth} className='ask-question'>Ask Question</button>
       </div>
-      <div >{
+      <div className='load' >{
         questionsList.data === null ?
           <h1>Loading...</h1> :
           <>
