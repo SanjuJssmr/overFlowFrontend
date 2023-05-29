@@ -1,27 +1,106 @@
 .side-nav{
+    display: flex;
+    flex-direction: column;
+ 
     width: 164px;
-    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 0 rgba(0, 0, 0, 0.2);
     transform: translateZ(0);
     box-sizing: border-box;
     font-size: 13px;
     position: sticky;
+    height: 100vh;
+
+  margin-top: 70px
+}
+
+.mainSide{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+
+.toggle{
+  
+    width: 50px;
+    z-index: 2;
+    color: #000000;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+ background: transparent;
+}
+
+@media (max-width : 700px){
+
+    .mainSide{
+      
+        position: fixed;
+        top: 10;
+        left: 10;
+
+        z-index: 10;
+      
+
+    
+    }
+   
+      .toggle {
+            display: block;
+            top: 0;
+            margin-bottom: 0%;
+            width: 50px;
+             margin-top: 15px;
+             margin-left: 15px;
+            background: transparent;
+         }
+
+         .side-nav{
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      margin-top: 16px;
+    background-color: #fff;
+         
+    padding-left: 20px;
+     
+  
+        
+        }
+
+      
+.mob-nav {
+
+        position: fixed;
+        left: -100%;
+        background-color: #fff;
+   
+}
+
+
+       
+       
 }
 
 .main-nav-bars{
     height: auto;
    max-width: 100%;
+    transition: ease 900ms;
    margin-top: 50px;
    padding: 20px 0px;
 }
 
 .nav-bars{
     padding: 10px 0px;
-
+    transition: ease 900ms;
 }
 
 .nav-bars div {
     padding-left: 10px;
-
+    transition: ease 900ms;
 }
 
 .nav-bar{
@@ -37,6 +116,16 @@
 .nav-bar:hover{
     color: #000000;
    
+}
+
+.mob-nav{
+    max-width: 100%;
+    width: 70%;
+}
+
+.mob-bars{
+width: 70%;
+        margin-left: 10px;
 }
 
 .active{
