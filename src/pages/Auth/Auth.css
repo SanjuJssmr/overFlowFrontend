@@ -83,3 +83,29 @@ margin-bottom: 0px;
     
  
 }
+
+
+
+@media(max-width:900px){
+.authsec  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    }
+    .signabt{
+        display: flex;
+        flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 300px;
+           
+            margin-top: 60px;
+    }
+         .signabt p{
+font-size: 15px;
+margin: 2%;
+
+         }
+}
