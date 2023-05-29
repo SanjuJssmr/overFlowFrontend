@@ -45,3 +45,14 @@
     color: #323232;
     line-height: 17px;
 }
+
+
+@media (max-width:900px){
+    .maintag{
+        margin-top: 59px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 400px;
+    }
+}
