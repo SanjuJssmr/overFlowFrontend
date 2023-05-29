@@ -17,7 +17,7 @@ display: flex;
 }
 
 .navbar {
-   
+   position: fixed;
  height: 100%;
  min-width: 85%;
  display: flex;
@@ -30,12 +30,12 @@ display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
-        
+        margin-left: 0%;
 }
 
 .logo {
     color: #ef8236;
-
+font-size: 2rem;
 }
    
 form input{
@@ -55,6 +55,62 @@ text-decoration: none;
     background: #dbf1ff;
     padding: 4px 10px;
     border-radius: 4px;
+    text-decoration: none;
     cursor: pointer;
     margin-left: 5px;
+}
+
+@media (max-width :900px){
+    .head{
+        display: none;
+    }
+    .nav-item{
+        display: none;
+    }
+form input {
+
+    padding: 1px 3px;
+   
+}
+    .navbar{
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+        .logo{
+            margin-right: 10%;
+            margin-left: 30px;
+            font-size: 1.2rem;
+            margin-bottom: 2px;
+        }
+
+        .main-nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+                .logbtn {
+                   
+         
+                    padding: 3px 2px;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 12px;
+                    margin-left: 3px;
+                 
+                }
+                .ava{
+                    font-size: 13px;
+              
+                }
+
+                .align{
+                    font-size: 12px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                }
+                                  .align .sr{
+                                    display: none;
+                                  }
 }
