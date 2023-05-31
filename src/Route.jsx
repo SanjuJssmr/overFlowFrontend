@@ -9,7 +9,7 @@ import Tags from './pages/Tags/Tags'
 import Users from './pages/Users/Users'
 import UserProfile from './pages/UserProfile/UserProfile'
 
-import Chatbot from './pages/ChatBot/ChatBot'
+import Chatbot from './pages/Home/ChatBot'
 
 const AllRoute = () => {
 return (
