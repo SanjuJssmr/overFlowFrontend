@@ -170,7 +170,7 @@ const Chatbot = () => {
 
           <div className='bots'>
               <ThemeProvider theme={theme}>
-                  <ChatBot steps={steps} recognitionEnable={true} headerTitle=" Simple ChatBot  -  StockOverFlow" />
+                  <ChatBot steps={steps} headerTitle=" Simple ChatBot  -  StockOverFlow" />
               </ThemeProvider>
           </div>
           
