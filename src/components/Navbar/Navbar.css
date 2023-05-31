@@ -17,40 +17,44 @@ display: flex;
 }
 
 .navbar {
-   position: fixed;
- height: 100%;
- min-width: 85%;
- display: flex;
- align-items: center;
- justify-content: space-between;
+  
+    height: 100%;
+    min-width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-btn {
+
+    text-decoration: none;
 }
 
-.align{
+.align {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        margin-left: 0%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 0%;
 }
 
 .logo {
     color: #ef8236;
-font-size: 2rem;
+    font-size: 2rem;
 }
-   
-form input{
+
+form input {
     padding: 5px 30px;
-  border-radius: 5px;
-  border: 1px solid rgb(192, 192, 192);
-  outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 192, 192);
+    outline: none;
 }
 
 
-.nav-item{
-text-decoration: none;
+.nav-item {
+    text-decoration: none;
 }
 
-.logbtn{
+.logbtn {
     border: 1px solid #009dff;
     background: #dbf1ff;
     padding: 4px 10px;
@@ -60,57 +64,63 @@ text-decoration: none;
     margin-left: 5px;
 }
 
-@media (max-width :900px){
-    .head{
+@media (max-width :900px) {
+    .head {
         display: none;
     }
-    .nav-item{
-        display: none;
-    }
-form input {
 
-    padding: 1px 3px;
-   
-}
-    .navbar{
-        margin-left: 0px;
+    .nav-item {
+        display: none;
+    }
+
+    form input {
+
+        padding: 1px 3px;
+
+    }
+
+    .navbar {
+        margin-left: 5px;
         margin-right: 2px;
     }
-        .logo{
-            margin-right: 10%;
-            margin-left: 30px;
-            font-size: 1.2rem;
-            margin-bottom: 2px;
-        }
 
-        .main-nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .logo {
+        margin-right: 10%;
+        margin-left: 30px;
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+    }
 
-                .logbtn {
-                   
-         
-                    padding: 3px 2px;
-                    border-radius: 4px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    font-size: 12px;
-                    margin-left: 3px;
-                 
-                }
-                .ava{
-                    font-size: 13px;
-              
-                }
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-                .align{
-                    font-size: 12px;
-                    margin-right: 5px;
-                    margin-bottom: 10px;
-                }
-                                  .align .sr{
-                                    display: none;
-                                  }
+    .logbtn {
+
+
+        padding: 3px 2px;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 12px;
+        margin-left: 3px;
+
+    }
+
+    .ava {
+        font-size: 13px;
+
+    }
+
+    .align {
+        font-size: 12px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .align .sr {
+        display: none;
+    }
 }
